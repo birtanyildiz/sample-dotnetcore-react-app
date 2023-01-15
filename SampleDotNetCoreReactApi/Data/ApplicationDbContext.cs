@@ -10,8 +10,8 @@ namespace SampleDotNetCoreReactApi.Data
 			: base(options)
 		{
 		}
-		public DbSet<Course> Courses { get; set; }
-		public DbSet<Content> Contents { get; set; }
+		public DbSet<Course>? Courses { get; set; }
+		public DbSet<Content>? Contents { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{

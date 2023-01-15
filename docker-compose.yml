@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   react-app:
-    image: ${DOCKER_REGISTRY-}clientapp
+    image: ${DOCKER_REGISTRY-}reactclientapp
     build:
       context: .
       dockerfile: reactclientapp/Dockerfile
