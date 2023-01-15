@@ -1,7 +1,7 @@
 # .Net Core 7 ile React Js Örneği 
 Bu projede .net core 7 ile crud işlemlerini api üzerinden yaparken frontend de ise react js ile bir arayüz hazırlanmıştır.
 
-## Örnekde kullanılan teknolojiler
+## Örnekte kullanılan teknolojiler
 - .Net Core 7 Web Api
 - EntityFrameworkCore
 - React JS
