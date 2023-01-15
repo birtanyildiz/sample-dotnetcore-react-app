@@ -1,0 +1,40 @@
+version: '3.4'
+
+services:
+  react-app:
+    image: ${DOCKER_REGISTRY-}clientapp
+    build:
+      context: .
+      dockerfile: reactclientapp/Dockerfile
+    ports:
+        - "80:3000"
+    volumes:
+        - ./reactclientapp:/app
+    depends_on:
+        - sampledotnetcorereactapi
+    links:
+        - sampledotnetcorereactapi
+  sampledotnetcorereactapi:
+    image: ${DOCKER_REGISTRY-}sampledotnetcorereactapi
+    build:
+      context: .
+      dockerfile: SampleDotNetCoreReactApi/Dockerfile
+    depends_on:
+        - db
+    links:
+        - db
+  db:
+    image: postgres
+    container_name: pgdb
+    restart: always
+    environment:
+      POSTGRES_DB: pgdb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432" 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
