@@ -23,7 +23,7 @@ docker-compose up
 ````
 komutu verilerek postgresql veritabanı, adminer veritabanı yöneticisi, react uygulaması ve dotnet core uygulaması ayağa kaldırılarak "_localhost_" adresi ile uygulama test edilebilir.
 
-##### Test
+### Test
 docker-compose up ile proje ayağa kalktıktan sonra, terminalden
 
 ```sh
@@ -32,7 +32,7 @@ dotnet test
 ````
 ile unit testler çalıştırılabilir. (Macos Visual Studio Kullandığımdan Windows için nasıl tepki verdiğini bilmiyorum. bu yöntem ile testi çalıştırabilirsiniz.)
 
-##### Geliştirme için 
+### Geliştirme için 
 Geliştirme kurulumu yapmak için dotnet core tarafında yapılan geliştirmeler için yalnızca visual studio ile açmak yeterli.
 
 React native tarafındaki geliştirmeler için reactclientapp dizinine giderek
