@@ -26,6 +26,7 @@ namespace SampleDotNetCoreReactApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CourseDto>>> GetCourses()
         {
+            // Bu kısım sadece ilk çalıştığında çalışacak. Daha sonra silinecek. Kolaylık olması amacıyla ekledim.
             _context.Database.Migrate();
           if (_context.Courses == null)
           {
