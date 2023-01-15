@@ -23,6 +23,8 @@ docker-compose up
 ````
 komutu verilerek postgresql veritabanı, adminer veritabanı yöneticisi, react uygulaması ve dotnet core uygulaması ayağa kaldırılarak "_localhost_" adresi ile uygulama test edilebilir.
 
+> webpack compiled successfully mesajını konsolda gördükten sonra tarayıcıda test edilebilir...
+
 ### Test
 docker-compose up ile proje ayağa kalktıktan sonra, terminalden
 
